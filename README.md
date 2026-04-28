@@ -1,6 +1,8 @@
-# Experimental verification of Signal sampling using various types
+# 1.Experimental verification of Signal sampling using various types
+
 # Aim
 Write a simple Python program for the construction and reconstruction of ideal, natural, and flattop sampling.
+
 # Tools required
 
 Google Colab
@@ -9,11 +11,29 @@ NumPy Library
 Matplotlib Library
 Internet Connection
 Computer / Laptop
+
+# Theory
+Theory
+Sampling is the process of converting a continuous-time analog signal into a discrete-time signal by taking the values of the signal at regular time intervals. It is widely used in digital communication systems, signal processing, and data conversion.
+
+According to the Nyquist Sampling Theorem, the sampling frequency must be at least twice the highest frequency present in the message signal to reconstruct the original signal without distortion.
+
+Types of Sampling
+
+1.Ideal Sampling
+In ideal sampling, the analog signal is multiplied by an impulse train of very short duration. The sampled output consists of instantaneous values of the signal at equally spaced intervals. It is theoretical and not practically realizable.
+
+2.Natural Sampling
+In natural sampling, the analog signal is sampled using pulses of finite width. During the pulse duration, the top of each pulse follows the shape of the input signal. It is more practical than ideal sampling.
+
+3.Flat-top Sampling
+In flat-top sampling, the sampled value remains constant during the pulse width. The amplitude of each sample equals the signal value at the start of sampling instant. This method is commonly used in practical sample-and-hold circuits.
+
 # Program
 ```
 import numpy as np
 import matplotlib.pyplot as plt
-#Continuous signal parameters
+# Continuous signal parameters
 fm = 5                      # Message frequency 5hz
 fs = 50                     # Sampling frequency 50hz
 t = np.linspace(0, 1, 1000) # Continuous time axis
@@ -64,8 +84,11 @@ plt.tight_layout()
 plt.show()
 ```
 # Output Waveform
-<img width="1189" height="790" alt="image" src="https://github.com/user-attachments/assets/88c8a6c9-f7a1-4085-a3cb-ea68bac688f6" />
+
+<img width="1492" height="989" alt="image" src="https://github.com/user-attachments/assets/45e52dd8-36aa-4a8a-87f1-d44d182e69bb" />
 
 # Results
-Experimental verification of Signal sampling using various types is verified succesfully
+
+Thus Experimental verification of Signal sampling using various types is verified.
+
 
