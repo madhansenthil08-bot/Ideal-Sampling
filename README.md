@@ -4,14 +4,14 @@
 Write a simple Python program for the construction and reconstruction of ideal, natural, and flattop sampling.
 
 # Tools required
-
+```
 Google Colab
 Python
 NumPy Library
 Matplotlib Library
 Internet Connection
 Computer / Laptop
-
+```
 # Theory
 Theory
 Sampling is the process of converting a continuous-time analog signal into a discrete-time signal by taking the values of the signal at regular time intervals. It is widely used in digital communication systems, signal processing, and data conversion.
